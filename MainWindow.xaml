@@ -1,0 +1,22 @@
+﻿<Window x:Class="Strategy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Strategy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="560" Width="1300" Loaded="Page_Loaded">
+    <Grid>
+        <Button Content="تولید اعداد" HorizontalAlignment="Left" Margin="23,168,0,0" VerticalAlignment="Top" Width="151" FontWeight="Normal" FontFamily="Trebuchet MS" FontSize="22" Background="#FF007ACC" BorderBrush="#FF007ACC" Foreground="#FF3E3C47" Height="51" Click="Button_Click"/>
+        <Button Content="مرتب سازی" HorizontalAlignment="Left" Margin="23,276,0,0" VerticalAlignment="Top" Width="151" FontWeight="Normal" FontFamily="Trebuchet MS" FontSize="22" Background="#FF007ACC" BorderBrush="#FF007ACC" Foreground="#FF3E3C47" Height="51" Click="Button_Click_1"/>
+        <TextBlock Name="Logger" Background="#FF133952" HorizontalAlignment="Left" Margin="443,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="466" Width="831" Foreground="#FFC9DEF5" FontFamily="Trebuchet MS" FontSize="16"/>
+        <TextBox x:Name="CountNumber" HorizontalContentAlignment="Right"
+            materialDesign:HintAssist.Hint=":تعداد عداد "
+            Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="241,159,882.6,311.4" Background="{x:Null}" BorderBrush="#FF133952" CaretBrush="#FF133952" Foreground="#FF133952" SelectionBrush="#FF133952" FontFamily="Trebuchet MS" Height="60" FontSize="20" />
+        <ComboBox x:Name="Way"
+            materialDesign:HintAssist.Hint=":روش مرتب سازی "  HorizontalContentAlignment="Right"
+            IsEditable="True"
+            materialDesign:HintAssist.HintOpacity=".26" Margin="205,276,882.6,194.4" Height="60" Foreground="#FF133952" BorderBrush="#FF133952" FontFamily="Trebuchet MS" FontSize="20"/>
+    </Grid>
+</Window>
